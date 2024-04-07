@@ -16,6 +16,7 @@ class Scrapper
    */
   public function scrap(\DOMDocument $dom): array
   {
+    $papers = [];
     $linkTags = $dom->getElementsByTagName('a');
     foreach ($linkTags as $link) {
       if (strpos($link->getAttribute('class'), 'paper-card') === 0) {

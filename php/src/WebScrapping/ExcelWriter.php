@@ -4,17 +4,14 @@ namespace Chuva\Php\WebScrapping;
 
 use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
 
-class ExcelWriter
-{
+class ExcelWriter {
     protected $writer;
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->writer = WriterEntityFactory::createXLSXWriter();
     }
 
-    public function writePapersToExcel(array $papers, $filePath)
-    {
+    public function writePapersToExcel(array $papers, $filePath) {
         $this->writer->openToFile($filePath);
 
         // Add headers for spreadsheet

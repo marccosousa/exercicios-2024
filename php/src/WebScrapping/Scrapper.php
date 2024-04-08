@@ -8,14 +8,12 @@ use Chuva\Php\WebScrapping\Entity\Person;
 /**
  * Does the scrapping of a webpage.
  */
-class Scrapper
-{
+class Scrapper {
 
     /**
      * Loads paper information from the HTML and returns the array with the data.
      */
-    public function scrap(\DOMDocument $dom): array
-    {
+    public function scrap(\DOMDocument $dom): array {
         $papers = [];
         $linkTags = $dom->getElementsByTagName('a');
         foreach ($linkTags as $link) {
@@ -36,8 +34,7 @@ class Scrapper
     /**
      * Finds the ID of the paper.
      */
-    private function findPaperId(\DOMElement $link): string
-    {
+    private function findPaperId(\DOMElement $link): string {
         $id = '';
         $divs = $link->getElementsByTagName('div');
         foreach ($divs as $divId) {
@@ -52,8 +49,7 @@ class Scrapper
     /**
      * Finds the title of the paper.
      */
-    private function findPaperTitle(\DOMElement $link): string
-    {
+    private function findPaperTitle(\DOMElement $link): string {
         $title = $link->getElementsByTagName('h4')->item(0)->textContent;
         return $title;
     }
@@ -61,8 +57,7 @@ class Scrapper
     /**
      * Finds the type of the paper.
      */
-    private function findPaperType(\DOMElement $link): string
-    {
+    private function findPaperType(\DOMElement $link): string {
         $type = '';
         $divs = $link->getElementsByTagName('div');
         foreach ($divs as $divType) {
@@ -77,8 +72,7 @@ class Scrapper
     /**
      * Finds the authors of the paper.
      */
-    private function findPaperAuthors(\DOMElement $link): array
-    {
+    private function findPaperAuthors(\DOMElement $link): array {
         $authorSpans = $link->getElementsByTagName('span');
         foreach ($authorSpans as $authorSpan) {
             $authorName = $authorSpan->textContent;

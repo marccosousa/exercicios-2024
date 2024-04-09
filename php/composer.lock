@@ -165,12 +165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pfrenssen/coder.git",
-                "reference": "7a35274fb0443ef90aaf5fe0855e4d66512ef113"
+                "reference": "496c1301961ffecc129db3d4327a5ee63c51eb34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/7a35274fb0443ef90aaf5fe0855e4d66512ef113",
-                "reference": "7a35274fb0443ef90aaf5fe0855e4d66512ef113",
+                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/496c1301961ffecc129db3d4327a5ee63c51eb34",
+                "reference": "496c1301961ffecc129db3d4327a5ee63c51eb34",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +209,7 @@
                 "issues": "https://www.drupal.org/project/issues/coder",
                 "source": "https://www.drupal.org/project/coder"
             },
-            "time": "2023-08-23T20:03:19+00:00"
+            "time": "2024-02-24T07:55:14+00:00"
         },
         {
             "name": "openspout/openspout",
@@ -2470,7 +2470,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/coder": 20,
         "phpunit/phpunit": 20
     },
     "prefer-stable": false,

@@ -27,7 +27,7 @@ class ExcelWriter {
 
     // Add headers for spreadsheet.
     $headers = ['ID', 'Title', 'Type'];
-    foreach ($papers[0]->getAuthors() as $index => $author) {
+    foreach ($papers[3]->getAuthors() as $index => $author) {
       $headers[] = "Author " . ($index + 1);
       $headers[] = "Author " . ($index + 1) . " institution";
     }

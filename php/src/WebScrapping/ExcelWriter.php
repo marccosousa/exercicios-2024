@@ -11,7 +11,7 @@ class ExcelWriter {
   /**
    * Declaring $write.
    *
-   * @var Excel
+   * @var object
    */
   protected $writer;
 
